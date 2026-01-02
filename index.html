@@ -3,21 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ayodeji Bode-Oke, Ph.D. | Aerospace & Mechanical Engineer</title>
+    <title>Ayodeji Bode-Oke, Ph.D. | Staff CAE Engineer</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;600;800&display=swap" rel="stylesheet">
     <style>
-        body { 
-            font-family: 'Manrope', sans-serif; 
-            background-color: #050505; 
-            color: #ffffff; 
-            line-height: 1.6;
-        }
-        .text-balanced { text-wrap: balance; }
-        .glass-card { 
-            background: linear-gradient(145deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.02) 100%);
-            border: 1px solid rgba(255,255,255,0.1);
-        }
+        body { font-family: 'Manrope', sans-serif; background-color: #050505; color: #ffffff; line-height: 1.6; }
+        .glass-card { background: linear-gradient(145deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.02) 100%); border: 1px solid rgba(255,255,255,0.1); }
         .hover-accent:hover { border-color: rgba(59, 130, 246, 0.5); transition: 0.4s; }
     </style>
 </head>
@@ -25,11 +16,11 @@
 
     <nav class="fixed top-0 w-full z-50 bg-[#050505]/80 backdrop-blur-xl border-b border-white/5">
         <div class="max-w-5xl mx-auto px-6 h-20 flex items-center justify-between">
-            <div class="text-lg font-extrabold tracking-tighter">BODE-OKE<span class="text-blue-500">.</span></div>
+            <div class="text-lg font-extrabold tracking-tighter uppercase">Bode-Oke<span class="text-blue-500">.</span></div>
             <div class="hidden md:flex space-x-10 text-[11px] uppercase tracking-[0.2em] font-semibold text-gray-400">
                 <a href="#work" class="hover:text-white transition">Research</a>
                 <a href="#experience" class="hover:text-white transition">Experience</a>
-                <a href="#about" class="hover:text-white transition">About</a>
+                <a href="https://scholar.google.com/citations?user=XRD6NW8AAAAJ&hl=en" target="_blank" class="hover:text-white transition">Scholar</a>
                 <a href="mailto:atbodeoke@gmail.com" class="text-white border-b border-white/20 pb-1">Contact</a>
             </div>
         </div>
@@ -38,49 +29,35 @@
     <section class="pt-48 pb-32 px-6">
         <div class="max-w-5xl mx-auto grid md:grid-cols-5 gap-16 items-center">
             <div class="md:col-span-3">
-                <h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter leading-[1.05] mb-8 text-balanced">
-                    Engineering solutions for <span class="text-gray-500">complex physical systems.</span>
+                <h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter leading-[1.05] mb-8">
+                    Solving complex <span class="text-gray-500">physical systems.</span>
                 </h1>
                 <p class="text-xl text-gray-400 font-light max-w-xl">
-                    Ph.D. specializing in modeling, simulation, and experimental design for autonomous vehicles and bio-inspired flight.
+                    Ph.D. specializing in <span class="text-white">FEA & CFD</span> simulations for cutting-edge autonomous and aerospace applications[cite: 24, 28]. Currently leading CAE initiatives at Aurora[cite: 40].
                 </p>
+                <div class="mt-10 flex space-x-4">
+                    <a href="https://scholar.google.com/citations?user=XRD6NW8AAAAJ&hl=en" target="_blank" class="bg-white text-black px-6 py-3 rounded-full font-bold text-sm hover:bg-blue-500 hover:text-white transition">View Publications</a>
+                </div>
             </div>
             <div class="md:col-span-2">
-                <div class="relative group">
-                    <div class="absolute -inset-1 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-2xl blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
-                    <img src="assets/img/Ayodeji_2.jpg" alt="Ayodeji Bode-Oke" class="relative rounded-2xl grayscale hover:grayscale-0 transition duration-700 w-full object-cover aspect-[4/5] shadow-2xl">
-                </div>
+                <img src="assets/img/Ayodeji_2.jpg" alt="Ayodeji Bode-Oke" class="rounded-2xl grayscale hover:grayscale-0 transition duration-700 shadow-2xl">
             </div>
         </div>
     </section>
 
-    <section id="work" class="py-32 px-6 border-t border-white/5 bg-white/[0.01]">
+    <section id="work" class="py-32 px-6 bg-white/[0.02]">
         <div class="max-w-5xl mx-auto">
-            <h2 class="text-sm font-bold uppercase tracking-[0.3em] text-blue-500 mb-16 italic">// Selected Research Simulations</h2>
-            
+            <h2 class="text-sm font-bold uppercase tracking-[0.3em] text-blue-500 mb-16 italic">// Selected Research</h2>
             <div class="grid md:grid-cols-2 gap-8">
-                <div class="glass-card hover-accent p-6 rounded-3xl transition group">
-                    <div class="rounded-2xl overflow-hidden mb-8 aspect-video bg-black">
-                        <img src="assets/gif/flight/SM3-backwardflight_flowfeatures.gif" alt="Dragonfly Simulation" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
-                    </div>
-                    <h3 class="text-2xl font-bold mb-3">Insect Free Flight Dynamics</h3>
-                    <p class="text-gray-400 font-light text-sm mb-4">Investigated low Reynolds number aerodynamics of dragonflies using high-speed photogrammetry and computational fluid dynamics (CFD).</p>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 rounded-full border border-white/10 text-[10px] font-bold uppercase tracking-widest text-gray-500">CFD</span>
-                        <span class="px-3 py-1 rounded-full border border-white/10 text-[10px] font-bold uppercase tracking-widest text-gray-500">NSF Sponsored</span>
-                    </div>
+                <div class="glass-card hover-accent p-6 rounded-3xl group">
+                    <img src="assets/gif/flight/SM3-backwardflight_flowfeatures.gif" class="rounded-2xl mb-8 aspect-video object-cover w-full group-hover:scale-[1.02] transition">
+                    <h3 class="text-2xl font-bold mb-3">Insect Aerodynamics</h3>
+                    <p class="text-gray-400 font-light text-sm mb-4">Investigating low Reynolds number flight and body dynamics adjustments through airframe morphing[cite: 62, 78].</p>
                 </div>
-
-                <div class="glass-card hover-accent p-6 rounded-3xl transition group">
-                    <div class="rounded-2xl overflow-hidden mb-8 aspect-video bg-black">
-                        <img src="assets/gif/swimming/babytrout.gif" alt="Aquatic Propulsion" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
-                    </div>
-                    <h3 class="text-2xl font-bold mb-3">Aquatic Propulsion Modeling</h3>
-                    <p class="text-gray-400 font-light text-sm mb-4">Developed hydrodynamic simulations to elucidate fundamental physics through simplified propulsor models and baby trout swimming gaits.</p>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 rounded-full border border-white/10 text-[10px] font-bold uppercase tracking-widest text-gray-500">Hydrodynamics</span>
-                        <span class="px-3 py-1 rounded-full border border-white/10 text-[10px] font-bold uppercase tracking-widest text-gray-500">Modeling</span>
-                    </div>
+                <div class="glass-card hover-accent p-6 rounded-3xl group">
+                    <img src="assets/gif/swimming/babytrout.gif" class="rounded-2xl mb-8 aspect-video object-cover w-full group-hover:scale-[1.02] transition">
+                    <h3 class="text-2xl font-bold mb-3">Aquatic Propulsion</h3>
+                    <p class="text-gray-400 font-light text-sm mb-4">Elucidating physics regarding optimal unsteady propulsion via shape change and morphing of swimmers[cite: 68].</p>
                 </div>
             </div>
         </div>
@@ -89,40 +66,35 @@
     <section id="experience" class="py-32 px-6">
         <div class="max-w-3xl mx-auto">
             <h2 class="text-3xl font-bold mb-16 tracking-tight">Professional Trajectory</h2>
-            
             <div class="space-y-16">
-                <div class="relative pl-8 border-l border-white/10 group">
+                <div class="relative pl-8 border-l border-white/10">
                     <div class="absolute w-3 h-3 bg-blue-500 rounded-full -left-[6.5px] top-2 shadow-[0_0_15px_rgba(59,130,246,0.5)]"></div>
-                    <div class="mb-1 text-xs font-bold uppercase tracking-widest text-gray-500">2021 — Present</div>
-                    <h4 class="text-xl font-bold mb-2">Sr. Mechanical (Structural Dynamics) Engineer</h4>
-                    <p class="text-gray-400 font-light">Embark Trucks • San Francisco, CA</p>
-                    <p class="mt-4 text-sm text-gray-500 font-light">Leading detailed structural analysis using ANSYS and Python to qualify autonomous vehicle structures for a 20-truck fleet.</p>
+                    <div class="text-xs font-bold uppercase tracking-widest text-gray-500">June 2023 — Present [cite: 41]</div>
+                    <h4 class="text-xl font-bold">Staff Mechanical (CAE) Engineer</h4>
+                    <p class="text-gray-400">Aurora Innovation [cite: 39, 40]</p>
                 </div>
-
                 <div class="relative pl-8 border-l border-white/10">
                     <div class="absolute w-3 h-3 bg-white/20 rounded-full -left-[6.5px] top-2"></div>
-                    <div class="mb-1 text-xs font-bold uppercase tracking-widest text-gray-500">2019 — 2021</div>
-                    <h4 class="text-xl font-bold mb-2">Post-Doctoral Research Associate</h4>
-                    <p class="text-gray-400 font-light">University of Virginia</p>
+                    <div class="text-xs font-bold uppercase tracking-widest text-gray-500">July 2021 — June 2023 </div>
+                    <h4 class="text-xl font-bold">Sr. Mechanical (Structural Dynamics) Engineer</h4>
+                    <p class="text-gray-400">Embark Trucks [cite: 44, 45]</p>
                 </div>
-
                 <div class="relative pl-8 border-l border-white/10">
                     <div class="absolute w-3 h-3 bg-white/20 rounded-full -left-[6.5px] top-2"></div>
-                    <div class="mb-1 text-xs font-bold uppercase tracking-widest text-gray-500">2015 — 2019</div>
-                    <h4 class="text-xl font-bold mb-2">Ph.D. Mechanical & Aerospace Engineering</h4>
-                    <p class="text-gray-400 font-light">University of Virginia</p>
+                    <div class="text-xs font-bold uppercase tracking-widest text-gray-500">2015 — 2019 </div>
+                    <h4 class="text-xl font-bold">Ph.D. Mechanical & Aerospace Engineering</h4>
+                    <p class="text-gray-400">University of Virginia [cite: 82, 84]</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="py-20 px-6 border-t border-white/5">
+    <footer class="py-20 px-6 border-t border-white/5 text-center">
         <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center text-gray-500 text-xs tracking-widest uppercase font-bold">
             <p>© 2026 Ayodeji Bode-Oke</p>
             <div class="flex space-x-8 mt-6 md:mt-0">
-                <a href="mailto:atbodeoke@gmail.com" class="hover:text-white transition">Email</a>
-                <a href="https://linkedin.com" target="_blank" class="hover:text-white transition">LinkedIn</a>
-                <a href="https://github.com/atb5dc" target="_blank" class="hover:text-white transition">GitHub</a>
+                <a href="https://scholar.google.com/citations?user=XRD6NW8AAAAJ&hl=en" target="_blank" class="hover:text-white transition">Scholar</a>
+                <a href="https://www.linkedin.com/in/ayodejibode-oke" target="_blank" class="hover:text-white transition">LinkedIn [cite: 3]</a>
             </div>
         </div>
     </footer>
