@@ -10,6 +10,7 @@
         body { font-family: 'Manrope', sans-serif; background-color: #050505; color: #ffffff; line-height: 1.6; }
         .glass-card { background: linear-gradient(145deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.02) 100%); border: 1px solid rgba(255,255,255,0.1); }
         .hover-accent:hover { border-color: rgba(59, 130, 246, 0.5); transition: 0.4s; }
+        .text-balanced { text-wrap: balance; }
     </style>
 </head>
 <body class="antialiased selection:bg-blue-500">
@@ -29,11 +30,11 @@
     <section class="pt-48 pb-32 px-6">
         <div class="max-w-5xl mx-auto grid md:grid-cols-5 gap-16 items-center">
             <div class="md:col-span-3">
-                <h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter leading-[1.05] mb-8">
+                <h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter leading-[1.05] mb-8 text-balanced">
                     Modeling the <span class="text-gray-500">physics of motion.</span>
                 </h1>
                 <p class="text-xl text-gray-400 font-light max-w-xl">
-                    Ph.D. in Mechanical & Aerospace Engineering with a track record in <span class="text-white">numerical simulations</span> and experimental design[cite: 24, 27]. Currently a Staff CAE Engineer at Aurora.
+                    Ph.D. in Mechanical & Aerospace Engineering with a proven track record in numerical simulations and experimental design. Currently a Staff CAE Engineer at Aurora Innovation.
                 </p>
                 <div class="mt-10 flex space-x-4">
                     <a href="https://scholar.google.com/citations?user=XRD6NW8AAAAJ&hl=en" target="_blank" class="bg-white text-black px-6 py-3 rounded-full font-bold text-sm hover:bg-blue-500 hover:text-white transition">Google Scholar</a>
@@ -51,14 +52,18 @@
             <h2 class="text-sm font-bold uppercase tracking-[0.3em] text-blue-500 mb-16 italic">// Selected Research</h2>
             <div class="grid md:grid-cols-2 gap-8">
                 <div class="glass-card hover-accent p-6 rounded-3xl group">
-                    <img src="assets/gif/flight/SM3-backwardflight_flowfeatures.gif" class="rounded-2xl mb-8 aspect-video object-cover w-full transition group-hover:scale-[1.01]">
+                    <div class="rounded-2xl overflow-hidden mb-8 aspect-video bg-black">
+                        <img src="assets/gif/flight/SM3-backwardflight_flowfeatures.gif" alt="Dragonfly Simulation" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                    </div>
                     <h3 class="text-2xl font-bold mb-3">Insect Aerodynamics</h3>
-                    <p class="text-gray-400 font-light text-sm">Quantifying kinematics and flow features of biological fliers to clarify body dynamics influence on maneuverability[cite: 66, 67].</p>
+                    <p class="text-gray-400 font-light text-sm">Quantifying kinematics and flow features of biological fliers to clarify body dynamics influence on maneuverability.</p>
                 </div>
                 <div class="glass-card hover-accent p-6 rounded-3xl group">
-                    <img src="assets/gif/swimming/babytrout.gif" class="rounded-2xl mb-8 aspect-video object-cover w-full transition group-hover:scale-[1.01]">
+                    <div class="rounded-2xl overflow-hidden mb-8 aspect-video bg-black">
+                        <img src="assets/gif/swimming/babytrout.gif" alt="Aquatic Propulsion" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                    </div>
                     <h3 class="text-2xl font-bold mb-3">Optimal Propulsion</h3>
-                    <p class="text-gray-400 font-light text-sm">Elucidating physics of unsteady propulsion via shape-change and morphing in biological swimmers[cite: 68].</p>
+                    <p class="text-gray-400 font-light text-sm">Elucidating physics regarding optimal unsteady propulsion via shape-change and morphing in biological swimmers.</p>
                 </div>
             </div>
         </div>
@@ -68,62 +73,64 @@
         <div class="max-w-4xl mx-auto">
             <h2 class="text-3xl font-bold mb-16 tracking-tight">Professional Experience</h2>
             <div class="space-y-20">
-                <div class="relative pl-8 border-l border-white/10">
+                
+                <div class="relative pl-8 border-l border-white/10 group">
                     <div class="absolute w-3 h-3 bg-blue-500 rounded-full -left-[6.5px] top-2 shadow-[0_0_15px_rgba(59,130,246,0.5)]"></div>
                     <div class="flex justify-between items-start mb-2">
                         <h4 class="text-xl font-bold uppercase tracking-tight">Staff Mechanical (CAE) Engineer</h4>
-                        <span class="text-xs font-bold text-gray-500 uppercase tracking-widest mt-1">2023 — Present [cite: 41]</span>
+                        <span class="text-xs font-bold text-gray-500 uppercase tracking-widest mt-1">June 2023 — Present</span>
                     </div>
-                    <p class="text-blue-400 text-sm font-semibold mb-4 uppercase tracking-wider">Aurora Innovation </p>
-                    <p class="text-gray-500 text-sm font-light leading-relaxed">Lead CAE initiatives for autonomous vehicle integration and innovative product development[cite: 42].</p>
+                    <p class="text-blue-400 text-sm font-semibold mb-4 uppercase tracking-wider">Aurora Innovation</p>
+                    <p class="text-gray-500 text-sm font-light leading-relaxed">Working as a Staff CAE engineer for autonomous vehicles and innovative products created at Aurora.</p>
                 </div>
 
-                <div class="relative pl-8 border-l border-white/10">
+                <div class="relative pl-8 border-l border-white/10 group">
                     <div class="absolute w-3 h-3 bg-white/20 rounded-full -left-[6.5px] top-2"></div>
                     <div class="flex justify-between items-start mb-2">
                         <h4 class="text-xl font-bold uppercase tracking-tight">Sr. Mechanical (Structural Dynamics) Engineer</h4>
-                        <span class="text-xs font-bold text-gray-500 uppercase tracking-widest mt-1">2021 — 2023 [cite: 46]</span>
+                        <span class="text-xs font-bold text-gray-500 uppercase tracking-widest mt-1">July 2021 — June 2023</span>
                     </div>
-                    <p class="text-gray-400 text-sm font-semibold mb-4 uppercase tracking-wider">Embark Trucks [cite: 44]</p>
+                    <p class="text-gray-400 text-sm font-semibold mb-4 uppercase tracking-wider">Embark Trucks</p>
                     <ul class="text-gray-500 text-sm font-light space-y-3">
-                        <li>• Led structural analysis utilizing ANSYS for the qualification of autonomous class 8 truck structures[cite: 47, 48, 50].</li>
-                        <li>• Performed linear/non-linear FEA, random vibration, modal analysis, and transient analysis[cite: 51, 52].</li>
-                        <li>• Developed structural environmental requirements and performed durability testing at proving grounds[cite: 53].</li>
+                        <li>• Led structural analysis activities utilizing ANSYS for autonomous class 8 trucks.</li>
+                        <li>• Performed linear and non-linear FEA, random vibration, modal analysis, and transient analysis.</li>
+                        <li>• Developed structural environmental requirements and performed durability testing at proving grounds.</li>
+                        <li>• Interfaced with cross-functional teams to ensure designs met specs without compromising functionality.</li>
                     </ul>
                 </div>
 
-                <div class="relative pl-8 border-l border-white/10">
+                <div class="relative pl-8 border-l border-white/10 group">
                     <div class="absolute w-3 h-3 bg-white/20 rounded-full -left-[6.5px] top-2"></div>
                     <div class="flex justify-between items-start mb-2">
-                        <h4 class="text-xl font-bold uppercase tracking-tight">Post-Doctoral Research Associate</h4>
-                        <span class="text-xs font-bold text-gray-500 uppercase tracking-widest mt-1">2019 — 2021 [cite: 57]</span>
+                        <h4 class="text-xl font-bold uppercase tracking-tight">Research Associate</h4>
+                        <span class="text-xs font-bold text-gray-500 uppercase tracking-widest mt-1">Dec 2019 — July 2021</span>
                     </div>
-                    <p class="text-gray-400 text-sm font-semibold mb-2 uppercase tracking-wider">University of Virginia [cite: 55]</p>
-                    <p class="text-gray-500 text-sm font-light">Research focused on unsteady aerodynamics, bioinspired engineering, and acoustics[cite: 58].</p>
+                    <p class="text-gray-400 text-sm font-semibold mb-2 uppercase tracking-wider">University of Virginia</p>
+                    <p class="text-gray-500 text-sm font-light leading-relaxed">Conducted research on unsteady aerodynamics, bio-inspired engineering, and acoustics.</p>
                 </div>
 
-                <div class="relative pl-8 border-l border-white/10">
+                <div class="relative pl-8 border-l border-white/10 group">
                     <div class="absolute w-3 h-3 bg-white/20 rounded-full -left-[6.5px] top-2"></div>
                     <div class="flex justify-between items-start mb-2">
-                        <h4 class="text-xl font-bold uppercase tracking-tight">PhD Candidate</h4>
-                        <span class="text-xs font-bold text-gray-500 uppercase tracking-widest mt-1">2015 — 2019 [cite: 61]</span>
+                        <h4 class="text-xl font-bold uppercase tracking-tight">PhD Candidate & Graduate Instructor</h4>
+                        <span class="text-xs font-bold text-gray-500 uppercase tracking-widest mt-1">Aug 2015 — Aug 2019</span>
                     </div>
-                    <p class="text-gray-400 text-sm font-semibold mb-4 uppercase tracking-wider">University of Virginia [cite: 59]</p>
-                    <ul class="text-gray-500 text-sm font-light space-y-3">
-                        <li>• Investigated bio-propulsion via high-speed photogrammetry and computational fluid dynamics[cite: 62, 65].</li>
-                        <li>• Developed codes in FORTRAN and MATLAB to automate simulation data workflows[cite: 66].</li>
-                        <li>• Taught Partial Differential Equations and Fluid Mechanics to 300+ students[cite: 72, 73].</li>
+                    <p class="text-gray-400 text-sm font-semibold mb-4 uppercase tracking-wider">University of Virginia</p>
+                    <ul class="text-gray-500 text-sm font-light space-y-2">
+                        <li>• Investigated bio-organisms for vehicle development using high-speed photogrammetry and CFD.</li>
+                        <li>• Developed codes in FORTRAN and MATLAB to quantify kinematics and automate simulation data workflows.</li>
+                        <li>• Taught Partial Differential Equations, Fluid Mechanics, and Statistics to 300+ students.</li>
                     </ul>
                 </div>
 
-                <div class="relative pl-8 border-l border-white/10">
+                <div class="relative pl-8 border-l border-white/10 group">
                     <div class="absolute w-3 h-3 bg-white/20 rounded-full -left-[6.5px] top-2"></div>
                     <div class="flex justify-between items-start mb-2">
                         <h4 class="text-xl font-bold uppercase tracking-tight">Undergraduate Researcher</h4>
-                        <span class="text-xs font-bold text-gray-500 uppercase tracking-widest mt-1">2013 — 2015 [cite: 76]</span>
+                        <span class="text-xs font-bold text-gray-500 uppercase tracking-widest mt-1">May 2013 — May 2015</span>
                     </div>
-                    <p class="text-gray-400 text-sm font-semibold mb-2 uppercase tracking-wider">Flow Simulation Research Group [cite: 74]</p>
-                    <p class="text-gray-500 text-sm font-light">Designed experiments to investigate body dynamics adjustments through airframe morphing[cite: 78].</p>
+                    <p class="text-gray-400 text-sm font-semibold mb-2 uppercase tracking-wider">Flow Simulation Research Group</p>
+                    <p class="text-gray-500 text-sm font-light leading-relaxed">Designed experiments capturing high-speed images to investigate airframe morphing and energy optimization in flight.</p>
                 </div>
             </div>
         </div>
@@ -134,25 +141,26 @@
             <div class="grid md:grid-cols-2 gap-16">
                 <div>
                     <h2 class="text-2xl font-bold mb-10 tracking-tight">Education</h2>
-                    <div class="space-y-6">
+                    <div class="space-y-8">
                         <div>
-                            <h4 class="font-bold text-lg">Ph.D. Mechanical & Aerospace Engineering</h4>
-                            <p class="text-gray-400 text-sm">University of Virginia, 2019 [cite: 84]</p>
+                            <h4 class="font-bold text-lg uppercase tracking-tight">Doctor of Philosophy (Ph.D.)</h4>
+                            <p class="text-gray-400 text-sm">Mechanical & Aerospace Engineering</p>
+                            <p class="text-gray-500 text-xs font-bold mt-1">UNIVERSITY OF VIRGINIA, 2019</p>
                         </div>
                         <div>
-                            <h4 class="font-bold text-lg">B.S. Aerospace Engineering</h4>
-                            <p class="text-gray-400 text-sm italic">Highest Distinction</p>
-                            <p class="text-gray-400 text-sm">University of Virginia, 2015 [cite: 86, 87]</p>
+                            <h4 class="font-bold text-lg uppercase tracking-tight">Bachelor of Science (B.S.)</h4>
+                            <p class="text-gray-400 text-sm">Aerospace Engineering • Highest Distinction</p>
+                            <p class="text-gray-500 text-xs font-bold mt-1">UNIVERSITY OF VIRGINIA, 2015</p>
                         </div>
                     </div>
                 </div>
                 <div>
                     <h2 class="text-2xl font-bold mb-10 tracking-tight">Honors & Awards</h2>
                     <ul class="space-y-4 text-sm text-gray-500 font-light">
-                        <li class="flex items-start"><span class="text-blue-500 mr-3">/</span> AIAA Abe Zarem Distinguished Achievement Award [cite: 15]</li>
-                        <li class="flex items-start"><span class="text-blue-500 mr-3">/</span> Outstanding Aerospace Engineer [cite: 17]</li>
-                        <li class="flex items-start"><span class="text-blue-500 mr-3">/</span> AIAA Momentum Member Spotlight [cite: 16]</li>
-                        <li class="flex items-start"><span class="text-blue-500 mr-3">/</span> International Physics Olympiad (IPHO) Participant [cite: 13, 14]</li>
+                        <li class="flex items-start"><span class="text-blue-500 mr-3">/</span> AIAA Abe Zarem Distinguished Achievement Award</li>
+                        <li class="flex items-start"><span class="text-blue-500 mr-3">/</span> Outstanding Aerospace Engineer Award</li>
+                        <li class="flex items-start"><span class="text-blue-500 mr-3">/</span> AIAA Momentum Member Spotlight</li>
+                        <li class="flex items-start"><span class="text-blue-500 mr-3">/</span> International Physics Olympiad (IPHO) Participant</li>
                     </ul>
                 </div>
             </div>
@@ -160,7 +168,14 @@
     </section>
 
     <footer class="py-20 px-6 border-t border-white/5 text-center">
-        <p class="text-gray-500 text-[10px] tracking-[0.4em] uppercase font-bold">© 2026 Ayodeji Bode-Oke</p>
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center text-gray-500 text-[10px] tracking-[0.4em] uppercase font-bold">
+            <p>© 2026 Ayodeji Bode-Oke</p>
+            <div class="flex space-x-8 mt-6 md:mt-0">
+                <a href="https://scholar.google.com/citations?user=XRD6NW8AAAAJ&hl=en" target="_blank" class="hover:text-white transition">Scholar</a>
+                <a href="https://www.linkedin.com/in/ayodejibode-oke" target="_blank" class="hover:text-white transition">LinkedIn</a>
+                <a href="mailto:atbodeoke@gmail.com" class="hover:text-white transition">Email</a>
+            </div>
+        </div>
     </footer>
 
 </body>
